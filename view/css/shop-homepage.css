@@ -1,0 +1,54 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/templates/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+.mt-5{
+  margin-top:172px !important
+}
+.centerbox{
+  justify-content: center;
+  margin-top: 50px;
+}
+#totalcart{
+  font-size: 2rem;
+}
+#csspt{
+  border: black 1px solid;
+  
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#form_1{
+  padding-bottom: 300px;
+}
+.col-sm-6{
+  padding-bottom: 50px;
+}
+.confirm
+{
+  margin:auto;
+  text-align: center;
+}
+.confirm h1{
+  margin: 50px 0 100px 0;
+  background-color: rgb(51, 49, 49);
+  color: rgb(255, 255, 255);
+}
+.confirm h2{
+  padding-top:20px
+}
+.confirm .borderdiv{
+  border: black 1px solid;
+  width: 35%;
+  margin: auto;
+  height: 450px;
+}
+
+#identifiant{
+  font-size: 2rem
+}

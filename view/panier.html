@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/teddy_3.jpg" />
+  <title>Panier</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Orinoco</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="headerCount" href="panier.html">Panier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <div class="shopping-cart">
+    <div class="row centerbox"id="csspt">
+      <div class="col-md-6 text-center">        
+        <div id="totalcart"></div>
+        <table class="product-table"></table>
+      </div>
+    </div>
+  </div>
+  <div class="container bloc-lg">  
+      <div class="col-sm-6">      
+          <div class="form-group">
+            <label for="name">Nom
+              <input id="name" class="form-control" required />
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="name">
+              Prénom
+              <input required id="firstname" class="form-control" type="text"  />
+            </label>
+          </div>
+          <div class="form-group" role="textbox">
+            <label for="email">
+              Adresse mail
+              <input class="form-control" type="email"  id="input_504" required />
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="city">
+              Ville
+              <input id="textbox" class="form-control" required ></textarea>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="textbox">
+              Adresse
+              <textarea id="textbox2" class="form-control" rows="4" cols="50" requires></textarea>
+            </label>
+          </div>
+          <button id="sendinfo" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-grey" type="submit" aria-label="Envoyer">
+            Acheter
+          </button>        
+      </div>
+      <h3>Contenu du panier</h3>
+      <div class="row" id="teddies"></div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="js/helper.js"></script>
+  <script type="text/javascript" src="js/panier.js"></script>
+</body>
+
+</html>
