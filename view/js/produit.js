@@ -1,7 +1,7 @@
 let cart;
 let click = 0;
 getCurrentTeddy();
-
+// Récupere les teddy dans l'api
 function getCurrentTeddy() {
     let request = new XMLHttpRequest();
     request.onload = createTeddyCard;
@@ -11,6 +11,8 @@ function getCurrentTeddy() {
     request.open("GET", "http://localhost:3000/api/teddies");
     request.send();
 }
+
+// Stockage de l'item sur le localstorage
 
 function addToBasket(e) {
     let panierSelectColor = e.target.parentNode.childNodes[7].value;
@@ -49,6 +51,7 @@ function addToBasket(e) {
     console.log(panier.length)
 }
 
+// Génere le contenu html du produit sélectionné
 function createTeddyCard(e) {
     console.log(e);
     let teddyId = location.href.split('#')[1];

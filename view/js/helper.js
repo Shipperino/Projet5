@@ -1,3 +1,5 @@
+// Compteur panier pour chaque header
+
 let headerCount = document.getElementById('headerCount');
 function headCount() {
     let panier = JSON.parse(localStorage.getItem("panier"));
