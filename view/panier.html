@@ -49,39 +49,41 @@
   </div>
   <div class="container bloc-lg">
     <div class="col-sm-6">
-      <div class="form-group">
-        <label for="name">Nom
-          <input id="name" class="form-control" required />
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="name">
-          Prénom
-          <input required id="firstname" class="form-control" type="text" />
-        </label>
-      </div>
-      <div type='email' class="form-group" role="textbox">
-        <label for="email">
-          Adresse mail
-          <input type="email" class="form-control" id="input_504" required="true" />
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="city">
-          Ville
-          <input id="textbox" class="form-control" required></textarea>
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="textbox">
-          Adresse
-          <textarea id="textbox2" class="form-control" rows="4" cols="50" requires></textarea>
-        </label>
-      </div>
-      <button id="sendinfo" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-grey" type="submit"
-        aria-label="Envoyer">
-        Acheter
-      </button>
+      <form id="form" onsubmit="sendForm(); return false" >
+        <div class="form-group">
+          <label for="name">Nom
+            <input id="name" class="form-control" required />
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="name">
+            Prénom
+            <input required id="firstname" class="form-control" type="text" />
+          </label>
+        </div>
+        <div type='email' class="form-group" role="textbox">
+          <label for="email">
+            Adresse mail
+            <input type="email" class="form-control" id="input_504" required="true" />
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="city">
+            Ville
+            <input id="textbox" class="form-control" required></textarea>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="textbox">
+            Adresse
+            <textarea id="textbox2" class="form-control" rows="4" cols="50" required></textarea>
+          </label>
+        </div>
+        <button id="sendinfo" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-grey" type="submit"
+          aria-label="Envoyer">
+          Acheter
+        </button>
+      </form>
     </div>
     <h3>Contenu du panier</h3>
     <div class="row" id="teddies"></div>

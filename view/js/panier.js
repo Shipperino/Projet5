@@ -15,8 +15,8 @@
      request.open("GET", "http://localhost:3000/api/teddies/" + item.id);
      request.send();
    }
-
  }
+
  getCartTeddy();
 
  let teddyCartCount = document.getElementById('numberofteddy');
@@ -133,7 +133,10 @@
  //  Envoie les données panier + info client
  function sendForm() {
    let products = [];
-
+   if (prixTotal == 0) {
+     alert('Votre panier est vide')
+     return;
+   }
    if (panier != null) {
      for (let item of panier) {
        console.log('testitemid', item.id);
@@ -145,6 +148,7 @@
    let address = document.getElementById("textbox2").value;
    let city = document.getElementById("textbox").value;
    let email = document.getElementById("input_504").value;
+
    let contact = new Contact(firstName, lastName, address, city, email);
    const body = {
      "products": products,
@@ -160,6 +164,7 @@
      console.log(data);
    };
    request.send(JSON.stringify(body));
+   return false
  }
 
 
@@ -167,7 +172,7 @@
 
    let data = JSON.parse(e.target.responseText);
    console.log(panier)
-   if (prixTotal == 0 && e.target.status === 400) {
+   if (prixTotal == 0) {
      document.getElementById('sendinfo').disabled = true;
      alert('Votre panier est vide');
    }
@@ -181,7 +186,4 @@
      window.location.href = "confirmation.html";
    }
 
- }
- let sendInfo = document.getElementById('sendinfo');
- sendInfo.addEventListener('click', sendForm);
-
+ };
